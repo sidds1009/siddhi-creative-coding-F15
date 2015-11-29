@@ -14,7 +14,7 @@ function setup(){
 
 function draw(){
   background(0);
-  translate(width/2, height/2); //origin at the middle
+  translate(width/2, height/2); 
  
   fill("#727B84");
   ellipse(0,0,400,400);
@@ -23,9 +23,9 @@ function draw(){
   fill("#D9E2E1");
   ellipse(0,0,200,200);
   
-  angleS = map(second(), 0, 60, 0, TWO_PI) - HALF_PI; //aling second to start at the top
-  angleM = map(minute(), 0, 60, 0, TWO_PI) - HALF_PI; //aling minute to start at the top
-  angleH = map(hour(), 0, 24, 0, TWO_PI*2) - HALF_PI; //aling hour to start at the top
+  angleS = map(second(), 0, 60, 0, TWO_PI) - HALF_PI; 
+  angleM = map(minute(), 0, 60, 0, TWO_PI) - HALF_PI; 
+  angleH = map(hour(), 0, 24, 0, TWO_PI*2) - HALF_PI; 
   
   sx = cos(angleS) * 180; //second x
   sy = sin(angleS) * 180; //second y
@@ -35,11 +35,11 @@ function draw(){
   hy = sin(angleH) * 100; //hour y
 
   
-  stroke("#FFCC00"); //second
-  line(0,0,sx,sy); //second line
-  stroke("#003366"); //  minute and hour
-  strokeWeight(2); //weight minute line
-  line(0,0,mx,my); //minutes line
-  strokeWeight(4); //weight hour line
-  line(0,0,hx,hy); //hour line
+  stroke("#FFCC00"); 
+  line(0,0,sx,sy); 
+  stroke("#003366"); 
+  strokeWeight(2); 
+  line(0,0,mx,my); 
+  strokeWeight(4); 
+  line(0,0,hx,hy); 
 }
